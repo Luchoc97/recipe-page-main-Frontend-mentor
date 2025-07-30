@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: #F3E5D8;
+    padding: 150px 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.contenido{
+    width: 60%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    line-height: 2.2rem;
+    font-family: Outfit;
+}
+.contenido .preparacion, .contenido .ingredientes, .contenido .instrucciones, .contenido .nutricion{
+    padding: 20px 0;
+}
+.contenido img{
+    width: 100%;
+    border-radius: 20px;
+}
+.contenido .titleReceta{
+    font-size: 2.2rem;
+    font-family: Young Serif;
+}
+.contenido .titleSec{
+    font-family: Young Serif;
+    color: #814730;
+}
+.contenido .prepTiempo{
+    background: #FFF7FC;
+    border-radius: 15px;
+    padding: 15px 25px;
+    margin-top: 30px;
+}
+.contenido .prepTiempo .titleTer, .contenido .medidas strong{
+    color: #792A49;
+}
+.contenido li{
+    list-style-position: inside;
+}
+.instrucciones ol li::marker{
+    color: #792A49;
+    font-weight: bold;
+}
+.prepTiempo ul, .ingredientes ul, .nutricion ol{
+    padding-left: 7px;
+}
+.contenido .nutricion .medidas{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.contenido .nutricion .medidas p{
+    padding: 0 0 0 25px;
+}
+    /*aplica el borde a todos los divs de la grilla de los datos de nutricion excepto a los dos ultimos
+    siguiendo el diseño de la imagen*/
+.contenido .nutricion .medidas div:not(:last-child):not(:nth-last-child(2)){
+    border-bottom: 1px solid #dadada;
+}
+@media (max-width: 768px) {
+    body{
+        padding: 0;
+    }
+    .contenido{
+        width: 100%;
+        background: #fff;
+        padding: 0;
+        border-radius: 20px;
+        line-height: 2.2rem;
+        font-family: Outfit;
+    }
+    .contenido .preparacion, .contenido .ingredientes, .contenido .instrucciones, .contenido .nutricion{
+        padding: 30px 40px 30px 40px;
+    }
+    .contenido img{
+        width: 100%;
+    }
+}
