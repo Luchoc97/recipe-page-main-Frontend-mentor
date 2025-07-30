@@ -1,2 +1,2 @@
 # Frontend-mentor
-Repositorio para publicar los desafíos de frontend mentor
+Repositorio para publicar el desafio recipe page main
